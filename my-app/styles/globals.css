@@ -51,9 +51,9 @@ body {
 
   --gradient-4: linear-gradient(
     90.26deg,
-    #4285f4 0%,
+    #4285f4 5%,
     #34a853 49.45%,
-    #fbbc05 99.95%,
+    #fbbc05 90%,
     #ea4335 100%
   );
   /* --gradient-4: linear-gradient(
@@ -178,7 +178,7 @@ body {
   }
 
   button.primary {
-    @apply px-[30px] border-gradient-1;
+    @apply px-[30px] border-gradient-2;
   }
   button.secondary {
     background-size: 140%;
