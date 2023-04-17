@@ -3,8 +3,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useScroll } from "../useScroll";
 // import communityMsg from "../../public/img/landing/community-msg.svg";
-import rocket from "../../public/img/emoji/rocket.png";
-import party from "../../public/img/emoji/party-popper.png";
 import { headerAnimation, imageAnimation } from "../Animations";
 import GDG_icon from "../../public/img/contact/GDG_icon.svg"
 
@@ -39,8 +37,9 @@ export default function Starter() {
           className="relative flex flex-col items-center
                           laptop:items-start "
         >
-          <h5>Don't just buy tickets</h5>
-          <h1 className="mb-1">Buy NFT</h1>
+          <h5>Don't just participate in events</h5>
+          <h1 className="mb-1">Buy NFT Tickets</h1>
+          {/* <h5>Get your own ticket</h5> */}
           <h4 className="mb-1 text">NFT as a ticketing service</h4>
           <h4 className="relative flex flex-row mb-3 ">
 
@@ -53,6 +52,13 @@ export default function Starter() {
             GDevent is a initative that encourage student's to particiapte in event's and earch awsome goodies!!
           </p>
         </div>
+        <motion.button className="primary" whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
+
+          Connect Wallet&nbsp;
+
+
+        </motion.button>
+
 
       </div>
     </div>

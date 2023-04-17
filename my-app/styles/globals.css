@@ -2,35 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body {
   padding: 0;
   margin: 0;
 }
 
-body{
-  background:#040D21
+body {
+  background: white;
 }
-
 
 :root {
-  --page-bg: linear-gradient(180deg, #040F26 0%, #040D21 48.96%, #040D21 76.56%, #0D77F3 100%);
-  --gradient-1: linear-gradient(90.26deg, #1A6AFF 0%, #D817F8 49.45%, #FFA51E 99.95%, #1A6AFF 100%);
-  --gradient-2: linear-gradient(99.01deg, rgba(77, 228, 138, 0.4567) 0%, rgba(238, 88, 43, 0.6) 51.04%, rgba(32, 137, 249, 0.6) 100%);
-  --gradient-3: linear-gradient(90deg, #0094FF 0%, #5AB2F1 11.96%, #D817F8 23.87%, #EF89EC 35.75%, #FE6734 44.77%, #EE582B 54.58%, #FC7752 62.07%, #ED805B 71.62%, rgba(120, 224, 238, 0.89) 80.38%, #83C2F8 85.35%, #36A8FA 92.26%, #2089F9 100%);
+  --page-bg: linear-gradient(
+    180deg,
+    #040f26 0%,
+    #040d21 48.96%,
+    #040d21 76.56%,
+    #0d77f3 100%
+  );
+  --gradient-1: linear-gradient(
+    90.26deg,
+    #1a6aff 0%,
+    #d817f8 49.45%,
+    #ffa51e 99.95%,
+    #1a6aff 100%
+  );
+  --gradient-2: linear-gradient(
+    99.01deg,
+    rgba(77, 228, 138, 0.4567) 0%,
+    rgba(238, 88, 43, 0.6) 51.04%,
+    rgba(32, 137, 249, 0.6) 100%
+  );
+  --gradient-3: linear-gradient(
+    90deg,
+    #0094ff 0%,
+    #5ab2f1 11.96%,
+    #d817f8 23.87%,
+    #ef89ec 35.75%,
+    #fe6734 44.77%,
+    #ee582b 54.58%,
+    #fc7752 62.07%,
+    #ed805b 71.62%,
+    rgba(120, 224, 238, 0.89) 80.38%,
+    #83c2f8 85.35%,
+    #36a8fa 92.26%,
+    #2089f9 100%
+  );
+
+  --gradient-4: linear-gradient(
+    90.26deg,
+    #4285f4 0%,
+    #34a853 49.45%,
+    #fbbc05 99.95%,
+    #ea4335 100%
+  );
+  /* --gradient-4: linear-gradient(
+    120deg,
+    #4285f4 0%,
+    #34a853 49%,
+    #fbbc05 75%,
+    #ea4335 100%
+  ); */
 }
 
-@layer base{
+@layer base {
   /*text styles*/
-  h2, h3, h4, h5, .sub-heading-1, .sub-heading-2, .large-bold-text, .bold-text, .form-text, .small-text, .quote, .small-inline-text, .nav-link, button, .small-bold-text {
-    color: white;
+  h2,
+  h3,
+  h4,
+  h5,
+  .sub-heading-1,
+  .sub-heading-2,
+  .large-bold-text,
+  .bold-text,
+  .form-text,
+  .small-text,
+  .quote,
+  .small-inline-text,
+  .nav-link,
+  button,
+  .small-bold-text {
+    color: black;
   }
-  .paragraph, .small-inline-bold-text, .footer-link{
-    color: #EBF1FE;
+  .paragraph,
+  .small-inline-bold-text,
+  .footer-link {
+    color: #ebf1fe;
   }
 
-  h1{
+  h1 {
     @apply font-inter font-bold text-gradient-1 block laptop:text-[34px] text-[20px] capitalize;
   }
   h2 {
@@ -48,7 +108,7 @@ body{
   h6 {
     @apply font-inter font-bold text-border-gradient-3 laptop:text-[42px] text-[22px];
   }
-  
+
   /*TODO: make font size responsive for the text styles below*/
   .all-cap {
     @apply font-inter font-bold tracking-wide text-gradient-1 text-[30px] uppercase;
@@ -69,7 +129,7 @@ body{
     @apply font-inter font-bold text-[15px];
   }
   .form-text {
-     @apply font-inter font-bold laptop:text-[16px] text-[12px] capitalize;
+    @apply font-inter font-bold laptop:text-[16px] text-[12px] capitalize;
   }
   .small-text {
     @apply font-poppins font-normal text-[13px] laptop:text-[15px];
@@ -93,9 +153,8 @@ body{
     @apply font-poppins font-medium text-[14px];
   }
   .small-bold-text {
-     @apply font-inter font-bold text-[14px] text-[#91959D] laptop:text-[15px];
+    @apply font-inter font-bold text-[14px] text-[#91959D] laptop:text-[15px];
   }
-
 }
 
 @layer components {
@@ -104,14 +163,18 @@ body{
     @apply flex flex-row justify-center items-center rounded-xl
     font-inter font-bold capitalize;
   }
-  button.primary, button.tetiary-1, button.tetiary-2{
+  button.primary,
+  button.tetiary-1,
+  button.tetiary-2 {
     @apply bg-transparent;
   }
-  button.primary, button.secondary {
+  button.primary,
+  button.secondary {
     @apply text-[14px] h-[45px] laptop:text-[16px] laptop:h-[45px];
   }
-  button.tetiary-1, button.tetiary-2 {
-    @apply text-[14px] py-[10px] leading-[22px]
+  button.tetiary-1,
+  button.tetiary-2 {
+    @apply text-[14px] py-[10px] leading-[22px];
   }
 
   button.primary {
@@ -124,7 +187,7 @@ body{
   button.secondary::after {
     content: url("../public/img/linkArrow.svg");
     padding-left: 16px;
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
   }
   button.secondary:hover::after {
     transform: translate(2px, -2px);
@@ -135,23 +198,24 @@ body{
   button.tetiary-2 {
     @apply px-[16px] border-gradient-2;
   }
-    button.additional-forward, button.additional {
+  button.additional-forward,
+  button.additional {
     @apply py-[13px] px-[43px] bg-blue-300
     text-[16px];
   }
-  button.additional-backward{
+  button.additional-backward {
     @apply py-[13px] px-[20px] bg-blue-300
     text-[16px];
   }
-  button.additional-backward::content{
+  button.additional-backward::content {
     padding-left: 16px;
-  } 
-  button.additional-forward::befo{
+  }
+  button.additional-forward::befo {
     padding-right: 16px;
   }
   button.additional-forward::after {
     content: url("../public/img/rightArrow.svg");
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
     padding-left: 16px;
   }
   button.additional-forward:hover::after {
@@ -159,12 +223,11 @@ body{
   }
   button.additional-backward::before {
     content: url("../public/img/leftArrow.svg");
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
   }
   button.additional-backward:hover::before {
     transform: translate(-4px);
   }
-
 
   /*Input fields*/
   .input-form {
@@ -181,7 +244,7 @@ body{
     @apply mb-2 w-full h-[52px] laptop:w-[262px] laptop:h-[52px] p-[15px] rounded-lg
     bg-black/30 border-2 border-black/40 box-border form-text;
   }
-  
+
   /*Progress Bar*/
   progress.progress-1 {
     height: 5px;
@@ -196,43 +259,51 @@ body{
   }
 }
 
-@layer utilities{
+@layer utilities {
   /*fonts*/
-  .font-inter{
-    font-family: 'Inter';
+  .font-inter {
+    font-family: "Inter";
   }
-  .font-poppins{
+  .font-poppins {
     font-family: "Poppins";
   }
-  .font-cabin{
+  .font-cabin {
     font-family: "Cabin";
   }
-  .font-indieflower{
+  .font-indieflower {
     font-family: "Indie Flower";
   }
 
   /*gradients*/
-  .text-gradient-1, .text-gradient-2, .text-gradient-3 {
-    background-size:auto;
-    width:fit-content;
+  .text-gradient-1,
+  .text-gradient-2,
+  .text-gradient-3 {
+    background-size: auto;
+    width: fit-content;
     color: transparent;
     background-clip: text;
     background-position: center;
   }
-  
-  .text-border-gradient-1, .text-border-gradient-2, .text-border-gradient-3 {
-    width:fit-content;
+
+  .text-border-gradient-1,
+  .text-border-gradient-2,
+  .text-border-gradient-3 {
+    width: fit-content;
     background-clip: text;
-    background-size:auto;
+    background-size: auto;
     background-position: center;
     -webkit-text-stroke: 3px transparent;
-    letter-spacing:2px;
+    letter-spacing: 2px;
   }
 
-  .border-gradient-1, .border-gradient-2, .border-gradient-3 {
+  .border-gradient-1,
+  .border-gradient-2,
+  .border-gradient-3 {
     position: relative;
   }
-  .border-gradient-1::before, .border-gradient-2::before, .border-gradient-3::before {
+  .border-gradient-1::before,
+  .border-gradient-2::before,
+  .border-gradient-3::before {
     content: "";
     position: absolute;
     top: 0;
@@ -241,31 +312,37 @@ body{
     bottom: 0;
     border-radius: 12px;
     border: 2px solid transparent;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
   }
 
-  .border-gradient-1::before{
+  .border-gradient-1::before {
     background: var(--gradient-1) border-box;
   }
-  .border-gradient-2::before{
+  .border-gradient-2::before {
     background: var(--gradient-2) border-box;
   }
-  .border-gradient-3::before{
+  .border-gradient-3::before {
     background: var(--gradient-3) border-box;
   }
 
-  .text-gradient-1, .text-border-gradient-1, .background-gradient-1{
-    background-image: var(--gradient-1);
-  } 
-  .text-gradient-2, .text-border-gradient-2, .background-gradient-2{
+  .text-gradient-1,
+  .text-border-gradient-1,
+  .background-gradient-1 {
+    background-image: var(--gradient-4);
+  }
+  .text-gradient-2,
+  .text-border-gradient-2,
+  .background-gradient-2 {
     background-image: var(--gradient-2);
-  } 
-  .text-gradient-3, .text-border-gradient-3, .background-gradient-3{
+  }
+  .text-gradient-3,
+  .text-border-gradient-3,
+  .background-gradient-3 {
     background-image: var(--gradient-3);
   }
-
 
   /*animations*/
   .fade-in {

@@ -83,7 +83,7 @@ function Navbar(props) {
       <div className="flex mr-auto py-2 pl-6">
         <Link href="/">
           <a className="flex mr-auto hover:bg-[#dbd5d533] ease-in transition duration-700 px-2 py-1 border-0 rounded-xl">
-            <div className="font-inter font-semibold text-[26px] text-white">
+            <div className="font-inter font-semibold text-[26px] text-gradient-1">
               GDvent
             </div>
           </a>
