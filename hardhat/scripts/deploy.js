@@ -1,11 +1,11 @@
 const hre = require("hardhat");
 
 async function main() {
-    const [user1,user2,user3] = await hre.ethers.getSigners()
-    const TickDock = await hre.ethers.getContractFactory("TickDock")
-    const contractDeployed = await TickDock.deploy()
-    await contractDeployed.deployed()
-    console.log("contract address",contractDeployed.address)
+  const [user1, user2, user3] = await hre.ethers.getSigners()
+  const GDvent = await hre.ethers.getContractFactory("GDvent")
+  const contractDeployed = await GDvent.deploy()
+  await contractDeployed.deployed()
+  console.log("contract address", contractDeployed.address)
 }
 
 main()
