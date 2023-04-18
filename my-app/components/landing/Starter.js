@@ -1,12 +1,21 @@
 // import { useScroll } from "../components/useScroll";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useScroll } from "../useScroll";
+import Web3Modal from 'web3modal'
 import { headerAnimation, imageAnimation } from "../Animations";
 import GDG_icon from "../../public/img/contact/GDG_icon.svg"
 
+
+
 export default function Starter() {
   const [element, controls] = useScroll();
+  const [walletConnected, setWalletConnected] = useState(false)
+  const [currentAddress, setCurrentAddress] = useState()
+
+
+
   return (
     <div
       ref={element}
@@ -48,11 +57,12 @@ export default function Starter() {
             className="relative sub-heading-1 mb-6 text-center max-w-[50%]
                           laptop:mb-11 laptop:text-left laptop:max-w-[75%]"
           >
-            GDvent is a onestop solution for organizing event and
+            GDvent is a onestop solution for organizing event with NFT's as a ticketing service
           </p>
         </div>
         <motion.button className="primary" whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
 
+          {/* {walletButton()} */}
           Connect Wallet&nbsp;
 
 

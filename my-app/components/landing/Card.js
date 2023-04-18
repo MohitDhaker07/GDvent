@@ -12,7 +12,7 @@ export default function Card() {
   return (
     <div
       ref={element}
-      className="relative flex flex-col items-center gap-10 mt-40
+      className="relative flex flex-col items-center gap-0 mt-20 mb-10
                       laptop:flex-row laptop:justify-between"
     >
       <div className="relative w-64 laptop:w-80">
@@ -28,8 +28,7 @@ export default function Card() {
 
           <p className="large-bold-text mb-3">Diverse Community</p>
           <p className="small-text">
-            You&apos;re not alone. Learn and get help from our friendly
-            community of beginner and experienced developers.
+            The Google Developer Club is a community of developers, designers, and technology enthusiasts who come together to share their knowledge, collaborate on projects, and build their skills
           </p>
         </motion.div>
       </div>
@@ -47,8 +46,7 @@ export default function Card() {
             Collaborative Knowledge
           </p>
           <p className="small-text">
-            Exclusive exposure to industry experts & an opportunity to learn
-            from them.
+            The club provides a platform for members to engage in collaborative learning and knowledge sharing
           </p>
         </motion.div>
       </div>
@@ -81,7 +79,7 @@ export default function Card() {
           <Image src={events} alt="image" />
           <p className="large-bold-text mb-3">Skill-Building Events</p>
           <p className="small-text">
-            Participate in high-quality, engaging events and learn skills.
+            The club also hosts skill-building events, such as workshops, hackathons, and code sprints, that offer members opportunities to learn new technologies, programming languages, and frameworks
           </p>
         </motion.div>
       </div>

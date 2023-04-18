@@ -231,7 +231,7 @@ body {
 
   /*Input fields*/
   .input-form {
-    @apply text-white bg-black/20 block w-full border-2 border-white/20 rounded-xl p-2.5 laptop:p-3;
+    @apply text-black bg-black/20 block w-full border-2 border-white/20 rounded-xl p-2.5 laptop:p-3;
   }
   input.input-form-1 {
     @apply w-full bg-transparent pl-2 py-3 placeholder text-white

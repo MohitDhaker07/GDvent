@@ -1,5 +1,6 @@
 import logo from "../public/img/Vector.svg";
 import Image from "next/image";
+import GDG_icon_1 from "../public/img/GDG_icon_1.svg"
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Web3Modal from 'web3modal'
@@ -86,6 +87,7 @@ function Navbar(props) {
             <div className="font-inter font-semibold text-[26px] text-gradient-1">
               GDvent
             </div>
+            <Image src={GDG_icon_1} alt="image" />
           </a>
         </Link>
       </div>
