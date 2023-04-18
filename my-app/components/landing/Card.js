@@ -20,7 +20,7 @@ export default function Card() {
           whileHover={{ y: -5 }}
           initial="hidden"
           animate="show"
-          animate={controls}
+          // animate={controls}
           variants={cardAnimation}
           transition={{ delay: 0.1, stiffness: 300 }}
         >
@@ -37,7 +37,7 @@ export default function Card() {
           whileHover={{ y: -5 }}
           initial="hidden"
           animate="show"
-          animate={controls}
+          // animate={controls}
           variants={cardAnimation}
           transition={{ delay: 0.1, stiffness: 300 }}
         >
@@ -55,7 +55,7 @@ export default function Card() {
           whileHover={{ y: -5 }}
           initial="hidden"
           animate="show"
-          animate={controls}
+          // animate={controls}
           variants={cardAnimation}
           transition={{ delay: 0.1, stiffness: 300 }}
         >
@@ -72,7 +72,7 @@ export default function Card() {
           whileHover={{ y: -5 }}
           initial="hidden"
           animate="show"
-          animate={controls}
+          // animate={controls}
           variants={cardAnimation}
           transition={{ delay: 0.1, stiffness: 300 }}
         >

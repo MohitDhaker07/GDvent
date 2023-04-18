@@ -3,7 +3,7 @@ import emailTop from "../../public/img/contact/emailTop.svg";
 import emailBig from "../../public/img/contact/emailBig.svg";
 import GDG_icon from "../../public/img/contact/GDG_icon.svg"
 import { ethers, Contract } from 'ethers'
-import { TickDock_Contract_Address, TickDock_ABI } from '../../utils/index'
+import { GDvent_Contract_Address, GDvent_ABI } from '../../utils/index'
 
 
 export default function Contact(props) {
