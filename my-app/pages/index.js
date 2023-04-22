@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Starter from "../components/landing/Starter";
 import Card from "../components/landing/Card";
-
+import Card1 from "../components/landing/Card1";
 
 export default function Home() {
 
@@ -15,6 +15,7 @@ export default function Home() {
 
         <Starter />
         <Card />
+        {/* <Card1 /> */}
 
       </div>
     </>
