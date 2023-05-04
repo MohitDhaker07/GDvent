@@ -15,7 +15,7 @@ export default function Home() {
 
         <Starter />
         <Card />
-        {/* <Card1 /> */}
+        <Card1 />
 
       </div>
     </>

@@ -45,7 +45,7 @@ export default function Starter() {
           className="relative flex flex-col items-center
                           laptop:items-start "
         >
-          <h5>Don't just participate in events</h5>
+          <h5>Don&apos;t just participate in events</h5>
           <h1 className="mb-1">Buy NFT Tickets</h1>
           {/* <h5>Get your own ticket</h5> */}
           <h4 className="mb-1 text">NFT as a ticketing service</h4>
@@ -57,7 +57,7 @@ export default function Starter() {
             className="relative sub-heading-1 mb-6 text-center max-w-[50%]
                           laptop:mb-11 laptop:text-left laptop:max-w-[75%]"
           >
-            GDvent is a onestop solution for organizing event with NFT's as a ticketing service
+            GDvent is a onestop solution for organizing event with NFT&apos;s as a ticketing service
           </p>
         </div>
         <motion.button className="primary" whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
