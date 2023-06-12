@@ -17,6 +17,7 @@ function Events(props) {
     document.querySelector("body").classList.add("events");
   });
 
+
   return (
     <div>
       <Navbar />
